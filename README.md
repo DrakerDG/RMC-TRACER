@@ -259,7 +259,7 @@ Any contribution should align with these principles.
 *Start the build process (Build the current project)*
 
 ![Build cpp](docs/images/Webots/Build/build03.png)
-*Confirmation of successful build!
+*Confirmation of successful build!*
 
 ![Build cpp](docs/images/Webots/Build/build04.png)
 *Open file Follow_Cam001.cpp*

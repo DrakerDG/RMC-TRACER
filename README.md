@@ -137,8 +137,10 @@ The controller is fully modular and split into multiple files:
 
 1. Clone the repository
 2. Open the world in Webots
-3. Run the simulation
-4. Observe: calibration → pause → line follower run
+3. Compile the RMC_Tracer_Ctrl.cpp robot controller
+4. Compile the Follow_Cam001.cpp robot controller
+5. Run the simulation
+6. Observe: calibration → pause → line follower run
 
 ```
 git clone https://github.com/DrakerDG/RMC-TRACER

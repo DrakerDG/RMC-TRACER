@@ -1,0 +1,4231 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/Floor.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/factory/containers/protos/PlasticCrate.proto"
+
+WorldInfo {
+  title "RMC-TRACER"
+  basicTimeStep 16
+  contactProperties [
+    ContactProperties {
+      material1 "rubber"
+      coulombFriction [
+        1.5
+      ]
+      bumpSound ""
+      rollSound ""
+      slideSound ""
+    }
+    ContactProperties {
+      material1 "nylon_brush"
+      coulombFriction [
+        0.57, 0.36
+      ]
+      forceDependentSlip [
+        0.4
+      ]
+      softCFM 0.06
+      bumpSound ""
+      rollSound ""
+      slideSound ""
+    }
+  ]
+}
+Viewpoint {
+  orientation -4.0822035376736854e-16 1 -1.384232282790449e-16 0.3400000000000151
+  position -0.48426721884393487 -0.6065924007339235 0.2140911871484428
+  near 0.001
+  follow "follower_cam:pan:tilt"
+  followType "Mounted Shot"
+  followSmoothness 0.005
+}
+TexturedBackground {
+  luminosity 0.5
+  skybox FALSE
+}
+DEF Sport_center Solid {
+  children [
+    Floor {
+      size 34 40
+      tileSize 3 3
+      appearance PBRAppearance {
+        baseColor 0.666667 0.780392 0.921569
+        baseColorMap ImageTexture {
+          url [
+            "obj/Stuffs/Sports Center V1/laminate_floor/laminate_floor.jpg"
+          ]
+        }
+        roughnessMap ImageTexture {
+          url [
+            "obj/Stuffs/Sports Center V1/laminate_floor/laminate_floor_roughness.jpg"
+          ]
+        }
+        metalness 0
+        normalMap ImageTexture {
+          url [
+            "obj/Stuffs/Sports Center V1/laminate_floor/laminate_floor_normal.jpg"
+          ]
+        }
+        normalMapFactor 0.2
+      }
+    }
+    CadShape {
+      url [
+        "obj/Stuffs/Sports Center V1/SC.obj"
+      ]
+    }
+    DEF drawings Group {
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColorMap ImageTexture {
+              url [
+                "obj/Stuffs/Sports Center V1/drawings/Drawing10.jpg"
+              ]
+            }
+            metalness 0
+          }
+          geometry Mesh {
+            url [
+              "obj/Stuffs/Sports Center V1/drawings/drawing001.obj"
+            ]
+          }
+        }
+        Shape {
+          appearance PBRAppearance {
+            baseColorMap ImageTexture {
+              url [
+                "obj/Stuffs/Sports Center V1/drawings/webots.jpg"
+              ]
+            }
+            metalness 0
+          }
+          geometry Mesh {
+            url [
+              "obj/Stuffs/Sports Center V1/drawings/drawing002.obj"
+            ]
+          }
+        }
+        Shape {
+          appearance PBRAppearance {
+            baseColorMap ImageTexture {
+              url [
+                "obj/Stuffs/Sports Center V1/drawings/Drawing11.jpg"
+              ]
+            }
+            metalness 0
+          }
+          geometry Mesh {
+            url [
+              "obj/Stuffs/Sports Center V1/drawings/drawing003.obj"
+            ]
+          }
+        }
+        Shape {
+          appearance PBRAppearance {
+            baseColorMap ImageTexture {
+              url [
+                "obj/Stuffs/Sports Center V1/drawings/Drawing12.jpg"
+              ]
+            }
+            metalness 0
+          }
+          geometry Mesh {
+            url [
+              "obj/Stuffs/Sports Center V1/drawings/drawing004.obj"
+            ]
+          }
+        }
+        Shape {
+          appearance PBRAppearance {
+            baseColorMap ImageTexture {
+              url [
+                "obj/Stuffs/Sports Center V1/drawings/Drawing07.jpg"
+              ]
+            }
+            metalness 0
+          }
+          geometry Mesh {
+            url [
+              "obj/Stuffs/Sports Center V1/drawings/drawing005.obj"
+            ]
+          }
+        }
+        Shape {
+          appearance PBRAppearance {
+            baseColorMap ImageTexture {
+              url [
+                "obj/Stuffs/Sports Center V1/drawings/webots.jpg"
+              ]
+            }
+            metalness 0
+          }
+          geometry Mesh {
+            url [
+              "obj/Stuffs/Sports Center V1/drawings/drawing006.obj"
+            ]
+          }
+        }
+        Shape {
+          appearance PBRAppearance {
+            baseColorMap ImageTexture {
+              url [
+                "obj/Stuffs/Sports Center V1/drawings/Drawing08.jpg"
+              ]
+            }
+            metalness 0
+          }
+          geometry Mesh {
+            url [
+              "obj/Stuffs/Sports Center V1/drawings/drawing007.obj"
+            ]
+          }
+        }
+        Shape {
+          appearance PBRAppearance {
+            baseColorMap ImageTexture {
+              url [
+                "obj/Stuffs/Sports Center V1/drawings/Drawing09.jpg"
+              ]
+            }
+            metalness 0
+          }
+          geometry Mesh {
+            url [
+              "obj/Stuffs/Sports Center V1/drawings/drawing008.obj"
+            ]
+          }
+        }
+        Shape {
+          appearance PBRAppearance {
+            baseColorMap ImageTexture {
+              url [
+                "obj/Stuffs/Sports Center V1/drawings/clock.jpg"
+              ]
+            }
+            metalness 0
+          }
+          geometry Mesh {
+            url [
+              "obj/Stuffs/Sports Center V1/drawings/clocks.obj"
+            ]
+          }
+        }
+      ]
+    }
+    DEF boxes Group {
+      children [
+        Solid {
+          children [
+            Shape {
+              appearance PBRAppearance {
+                baseColorMap ImageTexture {
+                  url [
+                    "obj/Stuffs/Sports Center V1/Boxes/box_00_color.jpg"
+                  ]
+                }
+                roughnessMap ImageTexture {
+                  url [
+                    "obj/Stuffs/Sports Center V1/Boxes/box_00_roughness.jpg"
+                  ]
+                }
+                metalness 0
+                normalMap ImageTexture {
+                  url [
+                    "obj/Stuffs/Sports Center V1/Boxes/box_00_normal.jpg"
+                  ]
+                }
+              }
+              geometry Mesh {
+                url [
+                  "obj/Stuffs/Sports Center V1/Boxes/boxes.obj"
+                ]
+              }
+            }
+          ]
+          name "boxes"
+          boundingObject Group {
+            children [
+              Pose {
+                translation -14 19.3 0.6
+                children [
+                  Shape {
+                    geometry Box {
+                      size 3.6 0.6 1.2
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation -14.9 19.3 1.5
+                children [
+                  Shape {
+                    geometry Box {
+                      size 1.8 0.6 0.6
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation -14.9 19.3 2.1
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.6 0.6 0.6
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 14 19.3 0.6
+                children [
+                  Shape {
+                    geometry Box {
+                      size 3.6 0.6 1.2
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 14.9 19.3 1.5
+                children [
+                  Shape {
+                    geometry Box {
+                      size 1.8 0.6 0.6
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+        Solid {
+          children [
+            Shape {
+              appearance PBRAppearance {
+                baseColorMap ImageTexture {
+                  url [
+                    "obj/Stuffs/Sports Center V1/Recycle/Recycle.jpg"
+                  ]
+                }
+                metalness 0
+              }
+              geometry Mesh {
+                url [
+                  "obj/Stuffs/Sports Center V1/Recycle/recycle_can.obj"
+                ]
+              }
+            }
+          ]
+          name "recycle_can"
+          boundingObject Group {
+            children [
+              Pose {
+                translation -3.3 19.365 0.5
+                children [
+                  Shape {
+                    geometry Box {
+                      size 2.62 0.4 1
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 3.3 19.365 0.5
+                children [
+                  Shape {
+                    geometry Box {
+                      size 2.62 0.4 1
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation -3.3 -19.365 0.5
+                children [
+                  Shape {
+                    geometry Box {
+                      size 2.62 0.4 1
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 3.3 -19.365 0.5
+                children [
+                  Shape {
+                    geometry Box {
+                      size 2.62 0.4 1
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+        PlasticCrate {
+          translation -13.5 -19.3 0.51
+          size 0.5 0.5 0.4
+          color 0.368627 0.360784 0.392157
+        }
+        PlasticCrate {
+          translation -14.18 -19.3 0.51
+          name "plastic crate(1)"
+          size 0.5 0.5 0.4
+          color 0.368627 0.360784 0.392157
+        }
+        PlasticCrate {
+          translation -15.63 -19.3 1.01
+          name "plastic crate(2)"
+          size 0.5 0.5 0.4
+          color 0.368627 0.360784 0.392157
+        }
+        PlasticCrate {
+          translation 13.55 -19.3 1.01
+          name "plastic crate(3)"
+          size 0.5 0.5 0.4
+          color 0.368627 0.360784 0.392157
+        }
+        PlasticCrate {
+          translation 15.52 -19.3 0.51
+          name "plastic crate(4)"
+          size 0.5 0.5 0.4
+          color 0.368627 0.360784 0.392157
+        }
+        PlasticCrate {
+          translation 15.53 -19.3 1.51
+          name "plastic crate(5)"
+          size 0.5 0.5 0.4
+          color 0.368627 0.360784 0.392157
+        }
+      ]
+    }
+    DEF lights Group {
+      children [
+        PointLight {
+          attenuation 0 0 1
+          intensity 10
+          location 5 6 6
+          castShadows TRUE
+        }
+        PointLight {
+          attenuation 0 0 1
+          intensity 10
+          location 5 -6 6
+          castShadows TRUE
+        }
+        PointLight {
+          attenuation 0 0 1
+          intensity 10
+          location -5 -6 6
+          castShadows TRUE
+        }
+        PointLight {
+          attenuation 0 0 1
+          intensity 10
+          location -5 6 6
+          castShadows TRUE
+        }
+      ]
+    }
+  ]
+  name "sport center"
+  boundingObject Group {
+    children [
+      Pose {
+        translation 16.8 0 4
+        children [
+          Shape {
+            geometry Box {
+              size 0.4 40 8
+            }
+          }
+        ]
+      }
+      Pose {
+        translation -16.8 0 4
+        children [
+          Shape {
+            geometry Box {
+              size 0.4 40 8
+            }
+          }
+        ]
+      }
+      Pose {
+        translation 0 19.8 4
+        children [
+          Shape {
+            geometry Box {
+              size 34 0.4 8
+            }
+          }
+        ]
+      }
+      Pose {
+        translation 0 -19.8 4
+        children [
+          Shape {
+            geometry Box {
+              size 34 0.4 8
+            }
+          }
+        ]
+      }
+      Pose {
+        translation 16.7 0 5
+        children [
+          Shape {
+            geometry Box {
+              size 0.6 0.6 10
+            }
+          }
+        ]
+      }
+      Pose {
+        translation 16.7 9.85 5
+        children [
+          Shape {
+            geometry Box {
+              size 0.6 0.6 10
+            }
+          }
+        ]
+      }
+      Pose {
+        translation 16.7 19.7 5
+        children [
+          Shape {
+            geometry Box {
+              size 0.6 0.6 10
+            }
+          }
+        ]
+      }
+      Pose {
+        translation 16.7 -9.85 5
+        children [
+          Shape {
+            geometry Box {
+              size 0.6 0.6 10
+            }
+          }
+        ]
+      }
+      Pose {
+        translation 16.7 -19.7 5
+        children [
+          Shape {
+            geometry Box {
+              size 0.6 0.6 10
+            }
+          }
+        ]
+      }
+      Pose {
+        translation -16.7 0 5
+        children [
+          Shape {
+            geometry Box {
+              size 0.6 0.6 10
+            }
+          }
+        ]
+      }
+      Pose {
+        translation -16.7 9.85 5
+        children [
+          Shape {
+            geometry Box {
+              size 0.6 0.6 10
+            }
+          }
+        ]
+      }
+      Pose {
+        translation -16.7 19.7 5
+        children [
+          Shape {
+            geometry Box {
+              size 0.6 0.6 10
+            }
+          }
+        ]
+      }
+      Pose {
+        translation -16.7 -9.85 5
+        children [
+          Shape {
+            geometry Box {
+              size 0.6 0.6 10
+            }
+          }
+        ]
+      }
+      Pose {
+        translation -16.7 -19.7 5
+        children [
+          Shape {
+            geometry Box {
+              size 0.6 0.6 10
+            }
+          }
+        ]
+      }
+      Pose {
+        translation 0 -19.7 6
+        children [
+          Shape {
+            geometry Box {
+              size 0.6 0.6 12
+            }
+          }
+        ]
+      }
+      Pose {
+        translation 0 19.7 6
+        children [
+          Shape {
+            geometry Box {
+              size 0.6 0.6 12
+            }
+          }
+        ]
+      }
+      Pose {
+        translation 13.005 -19.3 1
+        children [
+          Shape {
+            geometry Box {
+              size 0.01 0.6 2
+            }
+          }
+        ]
+      }
+      Pose {
+        translation 15.995 -19.3 1
+        children [
+          Shape {
+            geometry Box {
+              size 0.01 0.6 2
+            }
+          }
+        ]
+      }
+      Pose {
+        translation 14.5 -19.3 0.505
+        children [
+          Shape {
+            geometry Box {
+              size 3 0.6 0.01
+            }
+          }
+        ]
+      }
+      Pose {
+        translation 14.5 -19.3 1.005
+        children [
+          Shape {
+            geometry Box {
+              size 3 0.6 0.01
+            }
+          }
+        ]
+      }
+      Pose {
+        translation 14.5 -19.3 1.505
+        children [
+          Shape {
+            geometry Box {
+              size 3 0.6 0.01
+            }
+          }
+        ]
+      }
+      Pose {
+        translation 14.5 -19.3 2.005
+        children [
+          Shape {
+            geometry Box {
+              size 3 0.6 0.01
+            }
+          }
+        ]
+      }
+      Pose {
+        translation -13.005 -19.3 1
+        children [
+          Shape {
+            geometry Box {
+              size 0.01 0.6 2
+            }
+          }
+        ]
+      }
+      Pose {
+        translation -15.995 -19.3 1
+        children [
+          Shape {
+            geometry Box {
+              size 0.01 0.6 2
+            }
+          }
+        ]
+      }
+      Pose {
+        translation -14.5 -19.3 0.505
+        children [
+          Shape {
+            geometry Box {
+              size 3 0.6 0.01
+            }
+          }
+        ]
+      }
+      Pose {
+        translation -14.5 -19.3 1.005
+        children [
+          Shape {
+            geometry Box {
+              size 3 0.6 0.01
+            }
+          }
+        ]
+      }
+      Pose {
+        translation -14.5 -19.3 1.505
+        children [
+          Shape {
+            geometry Box {
+              size 3 0.6 0.01
+            }
+          }
+        ]
+      }
+      Pose {
+        translation -14.5 -19.3 2.005
+        children [
+          Shape {
+            geometry Box {
+              size 3 0.6 0.01
+            }
+          }
+        ]
+      }
+    ]
+  }
+  locked TRUE
+}
+DEF Furniture Group {
+  children [
+    DEF tables Group {
+      children [
+        Solid {
+          translation 3.8 -6 0
+          rotation 0 0 1 3.14159
+          children [
+            CadShape {
+              url [
+                "obj/Stuffs/Table V1/Table.obj"
+              ]
+            }
+          ]
+          name "table0"
+          boundingObject Group {
+            children [
+              Pose {
+                translation 0 0 0.69
+                children [
+                  Shape {
+                    geometry Box {
+                      size 1.8 0.76 0.04
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation -0.843 0 0.505
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.015 0.66 0.33
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0.843 0 0.505
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.015 0.66 0.33
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0 -0.3225 0.505
+                children [
+                  Shape {
+                    geometry Box {
+                      size 1.67 0.015 0.33
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation -0.81 0.265 0.05
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.03 0.03 0.1
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation -0.81 0.195 0.22134
+                rotation 1 0 0 0.523599
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.03 0.03 0.3
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation -0.81 0.122 0.505
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.03 0.03 0.33
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation -0.81 -0.265 0.05
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.03 0.03 0.1
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation -0.81 -0.195 0.22134
+                rotation 1 0 0 -0.523599
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.03 0.03 0.3
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation -0.81 -0.122 0.505
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.03 0.03 0.33
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation -0.81 0 0.265
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.03 0.32 0.03
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0.81 0.265 0.05
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.03 0.03 0.1
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0.81 0.195 0.22134
+                rotation 1 0 0 0.523599
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.03 0.03 0.3
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0.81 0.122 0.505
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.03 0.03 0.33
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0.81 -0.265 0.05
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.03 0.03 0.1
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0.81 -0.195 0.22134
+                rotation 1 0 0 -0.523599
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.03 0.03 0.3
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0.81 -0.122 0.505
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.03 0.03 0.33
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0.81 0 0.265
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.03 0.32 0.03
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+        Solid {
+          translation 1.9 -6 0
+          rotation 0 0 1 3.14159
+          children [
+            CadShape {
+              url [
+                "obj/Stuffs/Table V1/Table.obj"
+              ]
+            }
+          ]
+          name "table1"
+          boundingObject Group {
+            children [
+              Pose {
+                translation 0 0 0.69
+                children [
+                  Shape {
+                    geometry Box {
+                      size 1.8 0.76 0.04
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation -0.843 0 0.505
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.015 0.66 0.33
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0.843 0 0.505
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.015 0.66 0.33
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0 -0.3225 0.505
+                children [
+                  Shape {
+                    geometry Box {
+                      size 1.67 0.015 0.33
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation -0.81 0.265 0.05
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.03 0.03 0.1
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation -0.81 0.195 0.22134
+                rotation 1 0 0 0.523599
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.03 0.03 0.3
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation -0.81 0.122 0.505
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.03 0.03 0.33
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation -0.81 -0.265 0.05
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.03 0.03 0.1
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation -0.81 -0.195 0.22134
+                rotation 1 0 0 -0.523599
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.03 0.03 0.3
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation -0.81 -0.122 0.505
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.03 0.03 0.33
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation -0.81 0 0.265
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.03 0.32 0.03
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0.81 0.265 0.05
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.03 0.03 0.1
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0.81 0.195 0.22134
+                rotation 1 0 0 0.523599
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.03 0.03 0.3
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0.81 0.122 0.505
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.03 0.03 0.33
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0.81 -0.265 0.05
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.03 0.03 0.1
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0.81 -0.195 0.22134
+                rotation 1 0 0 -0.523599
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.03 0.03 0.3
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0.81 -0.122 0.505
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.03 0.03 0.33
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0.81 0 0.265
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.03 0.32 0.03
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+        Solid {
+          translation 0 -6 0
+          rotation 0 0 1 3.14159
+          children [
+            CadShape {
+              url [
+                "obj/Stuffs/Table V1/Table.obj"
+              ]
+            }
+          ]
+          name "table2"
+          boundingObject Group {
+            children [
+              Pose {
+                translation 0 0 0.69
+                children [
+                  Shape {
+                    geometry Box {
+                      size 1.8 0.76 0.04
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation -0.843 0 0.505
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.015 0.66 0.33
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0.843 0 0.505
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.015 0.66 0.33
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0 -0.3225 0.505
+                children [
+                  Shape {
+                    geometry Box {
+                      size 1.67 0.015 0.33
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation -0.81 0.265 0.05
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.03 0.03 0.1
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation -0.81 0.195 0.22134
+                rotation 1 0 0 0.523599
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.03 0.03 0.3
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation -0.81 0.122 0.505
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.03 0.03 0.33
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation -0.81 -0.265 0.05
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.03 0.03 0.1
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation -0.81 -0.195 0.22134
+                rotation 1 0 0 -0.523599
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.03 0.03 0.3
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation -0.81 -0.122 0.505
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.03 0.03 0.33
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation -0.81 0 0.265
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.03 0.32 0.03
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0.81 0.265 0.05
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.03 0.03 0.1
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0.81 0.195 0.22134
+                rotation 1 0 0 0.523599
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.03 0.03 0.3
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0.81 0.122 0.505
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.03 0.03 0.33
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0.81 -0.265 0.05
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.03 0.03 0.1
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0.81 -0.195 0.22134
+                rotation 1 0 0 -0.523599
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.03 0.03 0.3
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0.81 -0.122 0.505
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.03 0.03 0.33
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0.81 0 0.265
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.03 0.32 0.03
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+        Solid {
+          translation -1.9 -6 0
+          rotation 0 0 1 3.14159
+          children [
+            CadShape {
+              url [
+                "obj/Stuffs/Table V1/Table.obj"
+              ]
+            }
+          ]
+          name "table3"
+          boundingObject Group {
+            children [
+              Pose {
+                translation 0 0 0.69
+                children [
+                  Shape {
+                    geometry Box {
+                      size 1.8 0.76 0.04
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation -0.843 0 0.505
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.015 0.66 0.33
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0.843 0 0.505
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.015 0.66 0.33
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0 -0.3225 0.505
+                children [
+                  Shape {
+                    geometry Box {
+                      size 1.67 0.015 0.33
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation -0.81 0.265 0.05
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.03 0.03 0.1
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation -0.81 0.195 0.22134
+                rotation 1 0 0 0.523599
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.03 0.03 0.3
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation -0.81 0.122 0.505
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.03 0.03 0.33
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation -0.81 -0.265 0.05
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.03 0.03 0.1
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation -0.81 -0.195 0.22134
+                rotation 1 0 0 -0.523599
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.03 0.03 0.3
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation -0.81 -0.122 0.505
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.03 0.03 0.33
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation -0.81 0 0.265
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.03 0.32 0.03
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0.81 0.265 0.05
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.03 0.03 0.1
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0.81 0.195 0.22134
+                rotation 1 0 0 0.523599
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.03 0.03 0.3
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0.81 0.122 0.505
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.03 0.03 0.33
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0.81 -0.265 0.05
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.03 0.03 0.1
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0.81 -0.195 0.22134
+                rotation 1 0 0 -0.523599
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.03 0.03 0.3
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0.81 -0.122 0.505
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.03 0.03 0.33
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0.81 0 0.265
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.03 0.32 0.03
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+    DEF chairs Group {
+      children [
+        Solid {
+          translation -7 -4.5 0
+          rotation 0 0 1 1.5708
+          children [
+            CadShape {
+              url [
+                "obj/Stuffs/Chair V1/Chair.obj"
+              ]
+            }
+          ]
+          name "chair0"
+          contactMaterial "base"
+          boundingObject Group {
+            children [
+              Pose {
+                translation 0 -0.055 0.445
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.4 0.42 0.03
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation -0.138511 0.191 0.743
+                rotation -0.8913150072833806 0.11734400095887651 0.4379360035785941 0.584052
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.13 0.03 0.25
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0.138511 0.191 0.743
+                rotation 0.8913150072833806 0.11734400095887651 0.4379360035785941 -0.584055307179586
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.13 0.03 0.25
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0 0.205 0.735
+                rotation -1 0 0 0.5235953071795861
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.15 0.03 0.25
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation -0.21 -0.026 0.438
+                rotation 1 0 0 -0.523595307179586
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.02 0.02 1
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0.21 -0.026 0.438
+                rotation 1 0 0 -0.523595307179586
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.02 0.02 1
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0 -0.141 0.237
+                rotation 1 0 0 -0.523595307179586
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.4 0.02 0.02
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation -0.21 0.142 0.293
+                rotation 1 0 0 0.261799
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.02 0.02 0.6
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0.21 0.142 0.293
+                rotation 1 0 0 0.261799
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.02 0.02 0.6
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0 0.142 0.293
+                rotation 1 0 0 0.261799
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.4 0.02 0.02
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+          physics Physics {
+            density -1
+            mass 2
+          }
+        }
+        Solid {
+          translation -7 -3.5 0
+          rotation 0 0 1 1.5708
+          children [
+            CadShape {
+              url [
+                "obj/Stuffs/Chair V1/Chair.obj"
+              ]
+            }
+          ]
+          name "chair1"
+          contactMaterial "base"
+          boundingObject Group {
+            children [
+              Pose {
+                translation 0 -0.055 0.445
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.4 0.42 0.03
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation -0.138511 0.191 0.743
+                rotation -0.8913150072833806 0.11734400095887651 0.4379360035785941 0.584052
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.13 0.03 0.25
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0.138511 0.191 0.743
+                rotation 0.8913150072833806 0.11734400095887651 0.4379360035785941 -0.584055307179586
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.13 0.03 0.25
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0 0.205 0.735
+                rotation -1 0 0 0.5235953071795861
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.15 0.03 0.25
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation -0.21 -0.026 0.438
+                rotation 1 0 0 -0.523595307179586
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.02 0.02 1
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0.21 -0.026 0.438
+                rotation 1 0 0 -0.523595307179586
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.02 0.02 1
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0 -0.141 0.237
+                rotation 1 0 0 -0.523595307179586
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.4 0.02 0.02
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation -0.21 0.142 0.293
+                rotation 1 0 0 0.261799
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.02 0.02 0.6
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0.21 0.142 0.293
+                rotation 1 0 0 0.261799
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.02 0.02 0.6
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0 0.142 0.293
+                rotation 1 0 0 0.261799
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.4 0.02 0.02
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+          physics Physics {
+            density -1
+            mass 2
+          }
+        }
+        Solid {
+          translation -7 -2.5 0
+          rotation 0 0 1 1.5708
+          children [
+            CadShape {
+              url [
+                "obj/Stuffs/Chair V1/Chair.obj"
+              ]
+            }
+          ]
+          name "chair2"
+          contactMaterial "base"
+          boundingObject Group {
+            children [
+              Pose {
+                translation 0 -0.055 0.445
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.4 0.42 0.03
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation -0.138511 0.191 0.743
+                rotation -0.8913150072833806 0.11734400095887651 0.4379360035785941 0.584052
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.13 0.03 0.25
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0.138511 0.191 0.743
+                rotation 0.8913150072833806 0.11734400095887651 0.4379360035785941 -0.584055307179586
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.13 0.03 0.25
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0 0.205 0.735
+                rotation -1 0 0 0.5235953071795861
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.15 0.03 0.25
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation -0.21 -0.026 0.438
+                rotation 1 0 0 -0.523595307179586
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.02 0.02 1
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0.21 -0.026 0.438
+                rotation 1 0 0 -0.523595307179586
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.02 0.02 1
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0 -0.141 0.237
+                rotation 1 0 0 -0.523595307179586
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.4 0.02 0.02
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation -0.21 0.142 0.293
+                rotation 1 0 0 0.261799
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.02 0.02 0.6
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0.21 0.142 0.293
+                rotation 1 0 0 0.261799
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.02 0.02 0.6
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0 0.142 0.293
+                rotation 1 0 0 0.261799
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.4 0.02 0.02
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+          physics Physics {
+            density -1
+            mass 2
+          }
+        }
+        Solid {
+          translation -7 2.3 0
+          rotation 0 0 1 1.5708
+          children [
+            CadShape {
+              url [
+                "obj/Stuffs/Chair V1/Chair.obj"
+              ]
+            }
+          ]
+          name "chair3"
+          contactMaterial "base"
+          boundingObject Group {
+            children [
+              Pose {
+                translation 0 -0.055 0.445
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.4 0.42 0.03
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation -0.138511 0.191 0.743
+                rotation -0.8913150072833806 0.11734400095887651 0.4379360035785941 0.584052
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.13 0.03 0.25
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0.138511 0.191 0.743
+                rotation 0.8913150072833806 0.11734400095887651 0.4379360035785941 -0.584055307179586
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.13 0.03 0.25
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0 0.205 0.735
+                rotation -1 0 0 0.5235953071795861
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.15 0.03 0.25
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation -0.21 -0.026 0.438
+                rotation 1 0 0 -0.523595307179586
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.02 0.02 1
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0.21 -0.026 0.438
+                rotation 1 0 0 -0.523595307179586
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.02 0.02 1
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0 -0.141 0.237
+                rotation 1 0 0 -0.523595307179586
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.4 0.02 0.02
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation -0.21 0.142 0.293
+                rotation 1 0 0 0.261799
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.02 0.02 0.6
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0.21 0.142 0.293
+                rotation 1 0 0 0.261799
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.02 0.02 0.6
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0 0.142 0.293
+                rotation 1 0 0 0.261799
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.4 0.02 0.02
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+          physics Physics {
+            density -1
+            mass 2
+          }
+        }
+        Solid {
+          translation -5 3.5 0
+          rotation 0 0 -1 -0.7854053071795866
+          children [
+            CadShape {
+              url [
+                "obj/Stuffs/Chair V1/Chair.obj"
+              ]
+            }
+          ]
+          name "chair5"
+          contactMaterial "base"
+          boundingObject Group {
+            children [
+              Pose {
+                translation 0 -0.055 0.445
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.4 0.42 0.03
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation -0.138511 0.191 0.743
+                rotation -0.8913150072833806 0.11734400095887651 0.4379360035785941 0.584052
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.13 0.03 0.25
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0.138511 0.191 0.743
+                rotation 0.8913150072833806 0.11734400095887651 0.4379360035785941 -0.584055307179586
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.13 0.03 0.25
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0 0.205 0.735
+                rotation -1 0 0 0.5235953071795861
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.15 0.03 0.25
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation -0.21 -0.026 0.438
+                rotation 1 0 0 -0.523595307179586
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.02 0.02 1
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0.21 -0.026 0.438
+                rotation 1 0 0 -0.523595307179586
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.02 0.02 1
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0 -0.141 0.237
+                rotation 1 0 0 -0.523595307179586
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.4 0.02 0.02
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation -0.21 0.142 0.293
+                rotation 1 0 0 0.261799
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.02 0.02 0.6
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0.21 0.142 0.293
+                rotation 1 0 0 0.261799
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.02 0.02 0.6
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0 0.142 0.293
+                rotation 1 0 0 0.261799
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.4 0.02 0.02
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+          physics Physics {
+            density -1
+            mass 2
+          }
+        }
+        Solid {
+          translation 5 3.5 0
+          rotation 0 0 1 -0.785395307179586
+          children [
+            CadShape {
+              url [
+                "obj/Stuffs/Chair V1/Chair.obj"
+              ]
+            }
+          ]
+          name "chair6"
+          contactMaterial "base"
+          boundingObject Group {
+            children [
+              Pose {
+                translation 0 -0.055 0.445
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.4 0.42 0.03
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation -0.138511 0.191 0.743
+                rotation -0.8913150072833806 0.11734400095887651 0.4379360035785941 0.584052
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.13 0.03 0.25
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0.138511 0.191 0.743
+                rotation 0.8913150072833806 0.11734400095887651 0.4379360035785941 -0.584055307179586
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.13 0.03 0.25
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0 0.205 0.735
+                rotation -1 0 0 0.5235953071795861
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.15 0.03 0.25
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation -0.21 -0.026 0.438
+                rotation 1 0 0 -0.523595307179586
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.02 0.02 1
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0.21 -0.026 0.438
+                rotation 1 0 0 -0.523595307179586
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.02 0.02 1
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0 -0.141 0.237
+                rotation 1 0 0 -0.523595307179586
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.4 0.02 0.02
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation -0.21 0.142 0.293
+                rotation 1 0 0 0.261799
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.02 0.02 0.6
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0.21 0.142 0.293
+                rotation 1 0 0 0.261799
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.02 0.02 0.6
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0 0.142 0.293
+                rotation 1 0 0 0.261799
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.4 0.02 0.02
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+          physics Physics {
+            density -1
+            mass 2
+          }
+        }
+        Solid {
+          translation 7 -2.5 0
+          rotation 0 0 1 -1.5707953071795862
+          children [
+            CadShape {
+              url [
+                "obj/Stuffs/Chair V1/Chair.obj"
+              ]
+            }
+          ]
+          name "chair7"
+          contactMaterial "base"
+          boundingObject Group {
+            children [
+              Pose {
+                translation 0 -0.055 0.445
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.4 0.42 0.03
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation -0.138511 0.191 0.743
+                rotation -0.8913150072833806 0.11734400095887651 0.4379360035785941 0.584052
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.13 0.03 0.25
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0.138511 0.191 0.743
+                rotation 0.8913150072833806 0.11734400095887651 0.4379360035785941 -0.584055307179586
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.13 0.03 0.25
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0 0.205 0.735
+                rotation -1 0 0 0.5235953071795861
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.15 0.03 0.25
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation -0.21 -0.026 0.438
+                rotation 1 0 0 -0.523595307179586
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.02 0.02 1
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0.21 -0.026 0.438
+                rotation 1 0 0 -0.523595307179586
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.02 0.02 1
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0 -0.141 0.237
+                rotation 1 0 0 -0.523595307179586
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.4 0.02 0.02
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation -0.21 0.142 0.293
+                rotation 1 0 0 0.261799
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.02 0.02 0.6
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0.21 0.142 0.293
+                rotation 1 0 0 0.261799
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.02 0.02 0.6
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0 0.142 0.293
+                rotation 1 0 0 0.261799
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.4 0.02 0.02
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+          physics Physics {
+            density -1
+            mass 2
+          }
+        }
+        Solid {
+          translation 7 -3.5 0
+          rotation 0 0 1 -1.5707953071795862
+          children [
+            CadShape {
+              url [
+                "obj/Stuffs/Chair V1/Chair.obj"
+              ]
+            }
+          ]
+          name "chair8"
+          contactMaterial "base"
+          boundingObject Group {
+            children [
+              Pose {
+                translation 0 -0.055 0.445
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.4 0.42 0.03
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation -0.138511 0.191 0.743
+                rotation -0.8913150072833806 0.11734400095887651 0.4379360035785941 0.584052
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.13 0.03 0.25
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0.138511 0.191 0.743
+                rotation 0.8913150072833806 0.11734400095887651 0.4379360035785941 -0.584055307179586
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.13 0.03 0.25
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0 0.205 0.735
+                rotation -1 0 0 0.5235953071795861
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.15 0.03 0.25
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation -0.21 -0.026 0.438
+                rotation 1 0 0 -0.523595307179586
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.02 0.02 1
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0.21 -0.026 0.438
+                rotation 1 0 0 -0.523595307179586
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.02 0.02 1
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0 -0.141 0.237
+                rotation 1 0 0 -0.523595307179586
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.4 0.02 0.02
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation -0.21 0.142 0.293
+                rotation 1 0 0 0.261799
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.02 0.02 0.6
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0.21 0.142 0.293
+                rotation 1 0 0 0.261799
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.02 0.02 0.6
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0 0.142 0.293
+                rotation 1 0 0 0.261799
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.4 0.02 0.02
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+          physics Physics {
+            density -1
+            mass 2
+          }
+        }
+        Solid {
+          translation 7 -4.5 0
+          rotation 0 0 1 -1.5707953071795862
+          children [
+            CadShape {
+              url [
+                "obj/Stuffs/Chair V1/Chair.obj"
+              ]
+            }
+          ]
+          name "chair9"
+          contactMaterial "base"
+          boundingObject Group {
+            children [
+              Pose {
+                translation 0 -0.055 0.445
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.4 0.42 0.03
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation -0.138511 0.191 0.743
+                rotation -0.8913150072833806 0.11734400095887651 0.4379360035785941 0.584052
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.13 0.03 0.25
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0.138511 0.191 0.743
+                rotation 0.8913150072833806 0.11734400095887651 0.4379360035785941 -0.584055307179586
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.13 0.03 0.25
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0 0.205 0.735
+                rotation -1 0 0 0.5235953071795861
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.15 0.03 0.25
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation -0.21 -0.026 0.438
+                rotation 1 0 0 -0.523595307179586
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.02 0.02 1
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0.21 -0.026 0.438
+                rotation 1 0 0 -0.523595307179586
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.02 0.02 1
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0 -0.141 0.237
+                rotation 1 0 0 -0.523595307179586
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.4 0.02 0.02
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation -0.21 0.142 0.293
+                rotation 1 0 0 0.261799
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.02 0.02 0.6
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0.21 0.142 0.293
+                rotation 1 0 0 0.261799
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.02 0.02 0.6
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0 0.142 0.293
+                rotation 1 0 0 0.261799
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.4 0.02 0.02
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+          physics Physics {
+            density -1
+            mass 2
+          }
+        }
+        Solid {
+          translation 3.8 -6.4 0
+          rotation 0 0 1 3.14159
+          children [
+            CadShape {
+              url [
+                "obj/Stuffs/Chair V1/Chair.obj"
+              ]
+            }
+          ]
+          name "chair10"
+          contactMaterial "base"
+          boundingObject Group {
+            children [
+              Pose {
+                translation 0 -0.055 0.445
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.4 0.42 0.03
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation -0.138511 0.191 0.743
+                rotation -0.8913150072833806 0.11734400095887651 0.4379360035785941 0.584052
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.13 0.03 0.25
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0.138511 0.191 0.743
+                rotation 0.8913150072833806 0.11734400095887651 0.4379360035785941 -0.584055307179586
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.13 0.03 0.25
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0 0.205 0.735
+                rotation -1 0 0 0.5235953071795861
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.15 0.03 0.25
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation -0.21 -0.026 0.438
+                rotation 1 0 0 -0.523595307179586
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.02 0.02 1
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0.21 -0.026 0.438
+                rotation 1 0 0 -0.523595307179586
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.02 0.02 1
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0 -0.141 0.237
+                rotation 1 0 0 -0.523595307179586
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.4 0.02 0.02
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation -0.21 0.142 0.293
+                rotation 1 0 0 0.261799
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.02 0.02 0.6
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0.21 0.142 0.293
+                rotation 1 0 0 0.261799
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.02 0.02 0.6
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0 0.142 0.293
+                rotation 1 0 0 0.261799
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.4 0.02 0.02
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+          physics Physics {
+            density -1
+            mass 2
+          }
+        }
+        Solid {
+          translation 1.9 -6.4 0
+          rotation 0 0 1 3.14159
+          children [
+            CadShape {
+              url [
+                "obj/Stuffs/Chair V1/Chair.obj"
+              ]
+            }
+          ]
+          name "chair11"
+          contactMaterial "base"
+          boundingObject Group {
+            children [
+              Pose {
+                translation 0 -0.055 0.445
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.4 0.42 0.03
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation -0.138511 0.191 0.743
+                rotation -0.8913150072833806 0.11734400095887651 0.4379360035785941 0.584052
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.13 0.03 0.25
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0.138511 0.191 0.743
+                rotation 0.8913150072833806 0.11734400095887651 0.4379360035785941 -0.584055307179586
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.13 0.03 0.25
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0 0.205 0.735
+                rotation -1 0 0 0.5235953071795861
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.15 0.03 0.25
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation -0.21 -0.026 0.438
+                rotation 1 0 0 -0.523595307179586
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.02 0.02 1
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0.21 -0.026 0.438
+                rotation 1 0 0 -0.523595307179586
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.02 0.02 1
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0 -0.141 0.237
+                rotation 1 0 0 -0.523595307179586
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.4 0.02 0.02
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation -0.21 0.142 0.293
+                rotation 1 0 0 0.261799
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.02 0.02 0.6
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0.21 0.142 0.293
+                rotation 1 0 0 0.261799
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.02 0.02 0.6
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0 0.142 0.293
+                rotation 1 0 0 0.261799
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.4 0.02 0.02
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+          physics Physics {
+            density -1
+            mass 2
+          }
+        }
+        Solid {
+          translation 0 -6.4 0
+          rotation 0 0 1 3.14159
+          children [
+            CadShape {
+              url [
+                "obj/Stuffs/Chair V1/Chair.obj"
+              ]
+            }
+          ]
+          name "chair12"
+          contactMaterial "base"
+          boundingObject Group {
+            children [
+              Pose {
+                translation 0 -0.055 0.445
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.4 0.42 0.03
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation -0.138511 0.191 0.743
+                rotation -0.8913150072833806 0.11734400095887651 0.4379360035785941 0.584052
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.13 0.03 0.25
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0.138511 0.191 0.743
+                rotation 0.8913150072833806 0.11734400095887651 0.4379360035785941 -0.584055307179586
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.13 0.03 0.25
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0 0.205 0.735
+                rotation -1 0 0 0.5235953071795861
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.15 0.03 0.25
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation -0.21 -0.026 0.438
+                rotation 1 0 0 -0.523595307179586
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.02 0.02 1
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0.21 -0.026 0.438
+                rotation 1 0 0 -0.523595307179586
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.02 0.02 1
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0 -0.141 0.237
+                rotation 1 0 0 -0.523595307179586
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.4 0.02 0.02
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation -0.21 0.142 0.293
+                rotation 1 0 0 0.261799
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.02 0.02 0.6
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0.21 0.142 0.293
+                rotation 1 0 0 0.261799
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.02 0.02 0.6
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0 0.142 0.293
+                rotation 1 0 0 0.261799
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.4 0.02 0.02
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+          physics Physics {
+            density -1
+            mass 2
+          }
+        }
+        Solid {
+          translation -1.9 -6.4 0
+          rotation 0 0 1 3.14159
+          children [
+            CadShape {
+              url [
+                "obj/Stuffs/Chair V1/Chair.obj"
+              ]
+            }
+          ]
+          name "chair13"
+          contactMaterial "base"
+          boundingObject Group {
+            children [
+              Pose {
+                translation 0 -0.055 0.445
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.4 0.42 0.03
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation -0.138511 0.191 0.743
+                rotation -0.8913150072833806 0.11734400095887651 0.4379360035785941 0.584052
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.13 0.03 0.25
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0.138511 0.191 0.743
+                rotation 0.8913150072833806 0.11734400095887651 0.4379360035785941 -0.584055307179586
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.13 0.03 0.25
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0 0.205 0.735
+                rotation -1 0 0 0.5235953071795861
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.15 0.03 0.25
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation -0.21 -0.026 0.438
+                rotation 1 0 0 -0.523595307179586
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.02 0.02 1
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0.21 -0.026 0.438
+                rotation 1 0 0 -0.523595307179586
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.02 0.02 1
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0 -0.141 0.237
+                rotation 1 0 0 -0.523595307179586
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.4 0.02 0.02
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation -0.21 0.142 0.293
+                rotation 1 0 0 0.261799
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.02 0.02 0.6
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0.21 0.142 0.293
+                rotation 1 0 0 0.261799
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.02 0.02 0.6
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0 0.142 0.293
+                rotation 1 0 0 0.261799
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.4 0.02 0.02
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+          physics Physics {
+            density -1
+            mass 2
+          }
+        }
+      ]
+    }
+    DEF laptops Group {
+      children [
+        Pose {
+          translation 3.8 -6 0.71
+          children [
+            Pose {
+              translation 0 -0.005 0.005
+              children [
+                Shape {
+                  appearance PBRAppearance {
+                    baseColorMap ImageTexture {
+                      url [
+                        "obj/Stuffs/laptop V1/laptop.jpg"
+                      ]
+                    }
+                    metalness 0
+                  }
+                  geometry Mesh {
+                    url [
+                      "obj/Stuffs/laptop V1/laptop.obj"
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+        Pose {
+          translation 1.9 -6 0.71
+          children [
+            Shape {
+              appearance PBRAppearance {
+                baseColorMap ImageTexture {
+                  url [
+                    "obj/Stuffs/laptop V1/laptop.jpg"
+                  ]
+                }
+                metalness 0
+              }
+              geometry Mesh {
+                url [
+                  "obj/Stuffs/laptop V1/laptop.obj"
+                ]
+              }
+            }
+          ]
+        }
+        Pose {
+          translation 0 -6 0.71
+          children [
+            Shape {
+              appearance PBRAppearance {
+                baseColorMap ImageTexture {
+                  url [
+                    "obj/Stuffs/laptop V1/laptop.jpg"
+                  ]
+                }
+                metalness 0
+              }
+              geometry Mesh {
+                url [
+                  "obj/Stuffs/laptop V1/laptop.obj"
+                ]
+              }
+            }
+          ]
+        }
+        Pose {
+          translation -1.9 -6 0.71
+          children [
+            Shape {
+              appearance PBRAppearance {
+                baseColorMap ImageTexture {
+                  url [
+                    "obj/Stuffs/laptop V1/laptop.jpg"
+                  ]
+                }
+                metalness 0
+              }
+              geometry Mesh {
+                url [
+                  "obj/Stuffs/laptop V1/laptop.obj"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+    DEF tracks Group {
+      children [
+        Solid {
+          children [
+            Shape {
+              appearance PBRAppearance {
+                baseColorMap ImageTexture {
+                  url [
+                    "obj/Tracks/textures/colors.jpg"
+                  ]
+                }
+                roughnessMap ImageTexture {
+                  url [
+                    "obj/Tracks/textures/colors-roughness.jpg"
+                  ]
+                }
+                metalness 0
+              }
+              geometry Mesh {
+                url [
+                  "obj/Tracks/MiniTrack.obj"
+                ]
+              }
+            }
+          ]
+          name "MiniTrack"
+          boundingObject Pose {
+            translation 0 0 0.015
+            children [
+              Box {
+                size 2.16 1.56 0.03
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
+DEF Follower_cam Robot {
+  translation 0 -0.61 0.0472
+  children [
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        axis 0 0 1
+      }
+      device [
+        RotationalMotor {
+          name "motor::pan"
+          maxVelocity 142.8571428571428
+          sound ""
+        }
+      ]
+      endPoint Solid {
+        children [
+          HingeJoint {
+            jointParameters HingeJointParameters {
+              axis 0 1 0
+            }
+            device [
+              RotationalMotor {
+                name "motor::tilt"
+                maxVelocity 9.999999999999996
+                multiplier 0.07
+                sound ""
+              }
+            ]
+            endPoint Solid {
+              rotation 0 1 0 0
+              name "tilt"
+            }
+          }
+        ]
+        name "pan"
+      }
+    }
+  ]
+  name "follower_cam"
+  controller "Follow_Cam001"
+  supervisor TRUE
+}
+DEF RMC-TRACER Robot {
+  translation 0 -0.61 0.0472
+  children [
+    DEF body Group {
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColorMap ImageTexture {
+              url [
+                "obj/RMC-TRACER/textures/PLA/colors.jpg"
+              ]
+            }
+            roughnessMap ImageTexture {
+              url [
+                "obj/RMC-TRACER/textures/PLA/colors-roughness.jpg"
+              ]
+            }
+            metalness 0
+          }
+          geometry Mesh {
+            url [
+              "obj/RMC-TRACER/body/chassis.obj"
+            ]
+          }
+        }
+        Shape {
+          appearance PBRAppearance {
+            baseColorMap ImageTexture {
+              url [
+                "obj/RMC-TRACER/textures/PLA/colors.jpg"
+              ]
+            }
+            roughnessMap ImageTexture {
+              url [
+                "obj/RMC-TRACER/textures/PLA/colors-roughness.jpg"
+              ]
+            }
+            metalness 0
+          }
+          geometry Mesh {
+            url [
+              "obj/RMC-TRACER/body/case.obj"
+            ]
+          }
+        }
+        Shape {
+          appearance PBRAppearance {
+            IBLStrength 6
+          }
+          geometry Mesh {
+            url [
+              "obj/RMC-TRACER/screws/wheels_screws.obj"
+            ]
+          }
+        }
+        Shape {
+          appearance PBRAppearance {
+            IBLStrength 6
+          }
+          geometry Mesh {
+            url [
+              "obj/RMC-TRACER/screws/body_screws.obj"
+            ]
+          }
+        }
+        Solid {
+          children [
+            Shape {
+              appearance PBRAppearance {
+                baseColorMap ImageTexture {
+                  url [
+                    "obj/RMC-TRACER/textures/brushes/tape.jpg"
+                  ]
+                }
+                roughnessMap ImageTexture {
+                  url [
+                    "obj/RMC-TRACER/textures/brushes/tape_roughness.jpg"
+                  ]
+                }
+                metalness 0
+                IBLStrength 8
+                normalMap ImageTexture {
+                  url [
+                    "obj/RMC-TRACER/textures/brushes/tape_normal.jpg"
+                  ]
+                }
+              }
+              geometry Mesh {
+                url [
+                  "obj/RMC-TRACER/body/brushes.obj"
+                ]
+              }
+            }
+          ]
+          name "brushes"
+          contactMaterial "nylon_brush"
+          boundingObject Group {
+            children [
+              Pose {
+                translation -0.0235125 0 -0.014925
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.0049 0.009 0.00465
+                    }
+                  }
+                ]
+              }
+              Pose {
+                translation 0.0235125 0 -0.014925
+                children [
+                  Shape {
+                    geometry Box {
+                      size 0.0049 0.009 0.00465
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+          physics Physics {
+          }
+        }
+      ]
+    }
+    DEF PCB Group {
+      children [
+        DEF RMC-DRIVER Group {
+          children [
+            Shape {
+              appearance PBRAppearance {
+                baseColorMap ImageTexture {
+                  url [
+                    "obj/RMC-TRACER/textures/PCB/Driver/RMC-DRIVER-01.jpg"
+                  ]
+                }
+                roughnessMap ImageTexture {
+                  url [
+                    "obj/RMC-TRACER/textures/PCB/Driver/RMC-DRIVER-01-roughness.jpg"
+                  ]
+                }
+                metalness 0
+                normalMap ImageTexture {
+                  url [
+                    "obj/RMC-TRACER/textures/PCB/Driver/RMC-DRIVER-01-normal.jpg"
+                  ]
+                }
+              }
+              geometry Mesh {
+                url [
+                  "obj/RMC-TRACER/PCBs/RMC-DRIVER/RMC-DRIVER.obj"
+                ]
+              }
+            }
+            Shape {
+              appearance PBRAppearance {
+                baseColorMap ImageTexture {
+                  url [
+                    "obj/RMC-TRACER/textures/PCB/Headers/Female_Pin_Header_01.jpg"
+                  ]
+                }
+                roughnessMap ImageTexture {
+                  url [
+                    "obj/RMC-TRACER/textures/PCB/Headers/Female_Pin_Header_01-roughness.jpg"
+                  ]
+                }
+                metalness 0
+                normalMap ImageTexture {
+                  url [
+                    "obj/RMC-TRACER/textures/PCB/Headers/Female_Pin_Header_01-normal.jpg"
+                  ]
+                }
+              }
+              geometry Mesh {
+                url [
+                  "obj/RMC-TRACER/PCBs/RMC-DRIVER/Headers.obj"
+                ]
+              }
+            }
+            Shape {
+              appearance PBRAppearance {
+                IBLStrength 6
+              }
+              geometry Mesh {
+                url [
+                  "obj/RMC-TRACER/PCBs/RMC-DRIVER/Contacts.obj"
+                ]
+              }
+            }
+            Shape {
+              appearance PBRAppearance {
+                roughness 0.2
+                metalness 0.8
+                IBLStrength 5
+              }
+              geometry Mesh {
+                url [
+                  "obj/RMC-TRACER/PCBs/RMC-DRIVER/Devices_metal.obj"
+                ]
+              }
+            }
+            CadShape {
+              url [
+                "obj/RMC-TRACER/PCBs/RMC-DRIVER/Devices.obj"
+              ]
+            }
+          ]
+        }
+        DEF RMC-R4M1 Group {
+          children [
+            Shape {
+              appearance PBRAppearance {
+                baseColorMap ImageTexture {
+                  url [
+                    "obj/RMC-TRACER/textures/PCB/RA4M1/RMC-RA4M1_01.jpg"
+                  ]
+                }
+                roughnessMap ImageTexture {
+                  url [
+                    "obj/RMC-TRACER/textures/PCB/RA4M1/RMC-RA4M1_01-roughness.jpg"
+                  ]
+                }
+                metalness 0
+                normalMap ImageTexture {
+                  url [
+                    "obj/RMC-TRACER/textures/PCB/RA4M1/RMC-RA4M1_01-normal.jpg"
+                  ]
+                }
+              }
+              geometry Mesh {
+                url [
+                  "obj/RMC-TRACER/PCBs/RMC-R4M1/RMC-R4M1.obj"
+                ]
+              }
+            }
+            Shape {
+              appearance PBRAppearance {
+                baseColorMap ImageTexture {
+                  url [
+                    "obj/RMC-TRACER/textures/PCB/Headers/Female_Pin_Header_01.jpg"
+                  ]
+                }
+                roughnessMap ImageTexture {
+                  url [
+                    "obj/RMC-TRACER/textures/PCB/Headers/Female_Pin_Header_01-roughness.jpg"
+                  ]
+                }
+                metalness 0
+                normalMap ImageTexture {
+                  url [
+                    "obj/RMC-TRACER/textures/PCB/Headers/Female_Pin_Header_01-normal.jpg"
+                  ]
+                }
+              }
+              geometry Mesh {
+                url [
+                  "obj/RMC-TRACER/PCBs/RMC-R4M1/Headers.obj"
+                ]
+              }
+            }
+            Shape {
+              appearance PBRAppearance {
+                baseColorMap ImageTexture {
+                  url [
+                    "obj/RMC-TRACER/textures/PCB/RA4M1/DIP.jpg"
+                  ]
+                }
+                roughnessMap ImageTexture {
+                  url [
+                    "obj/RMC-TRACER/textures/PCB/RA4M1/DIP-roughness.jpg"
+                  ]
+                }
+                metalness 0
+                normalMap ImageTexture {
+                  url [
+                    "obj/RMC-TRACER/textures/PCB/RA4M1/DIP-normal.jpg"
+                  ]
+                }
+              }
+              geometry Mesh {
+                url [
+                  "obj/RMC-TRACER/PCBs/RMC-R4M1/DIP-SW.obj"
+                ]
+              }
+            }
+            Shape {
+              appearance PBRAppearance {
+                roughness 0.2
+                metalness 0.8
+                IBLStrength 5
+              }
+              geometry Mesh {
+                url [
+                  "obj/RMC-TRACER/PCBs/RMC-R4M1/Devices_metal.obj"
+                ]
+              }
+            }
+            CadShape {
+              url [
+                "obj/RMC-TRACER/PCBs/RMC-R4M1/Devices.obj"
+              ]
+            }
+          ]
+        }
+        DEF RMC-OLED Group {
+          children [
+            Shape {
+              appearance PBRAppearance {
+                baseColorMap ImageTexture {
+                  url [
+                    "obj/RMC-TRACER/textures/PCB/OLED/RMC-OLED_01.jpg"
+                  ]
+                }
+                roughnessMap ImageTexture {
+                  url [
+                    "obj/RMC-TRACER/textures/PCB/OLED/RMC-OLED_01-roughness.jpg"
+                  ]
+                }
+                metalness 0
+                normalMap ImageTexture {
+                  url [
+                    "obj/RMC-TRACER/textures/PCB/OLED/RMC-OLED_01-normal.jpg"
+                  ]
+                }
+              }
+              geometry Mesh {
+                url [
+                  "obj/RMC-TRACER/PCBs/RMC-OLED/RMC-OLED.obj"
+                ]
+              }
+            }
+            Shape {
+              appearance PBRAppearance {
+                baseColorMap ImageTexture {
+                  url [
+                    "obj/RMC-TRACER/textures/PCB/OLED/RMC-DISPLAY_01.jpg"
+                  ]
+                }
+                roughnessMap ImageTexture {
+                  url [
+                    "obj/RMC-TRACER/textures/PCB/OLED/RMC-DISPLAY_01-roughness.jpg"
+                  ]
+                }
+                metalness 0
+                normalMap ImageTexture {
+                  url [
+                    "obj/RMC-TRACER/textures/PCB/OLED/RMC-DISPLAY_01-normal.jpg"
+                  ]
+                }
+              }
+              geometry Mesh {
+                url [
+                  "obj/RMC-TRACER/PCBs/RMC-OLED/SH1107.obj"
+                ]
+              }
+            }
+            Shape {
+              appearance PBRAppearance {
+                roughness 0.2
+                metalness 0.8
+                IBLStrength 5
+              }
+              geometry Mesh {
+                url [
+                  "obj/RMC-TRACER/PCBs/RMC-OLED/Devices_metal.obj"
+                ]
+              }
+            }
+            CadShape {
+              url [
+                "obj/RMC-TRACER/PCBs/RMC-OLED/Devices.obj"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+    DEF batteries Group {
+      children [
+        CadShape {
+          url [
+            "obj/RMC-TRACER/battery/batteries.obj"
+          ]
+        }
+        Shape {
+          appearance PBRAppearance {
+            IBLStrength 6
+          }
+          geometry Mesh {
+            url [
+              "obj/RMC-TRACER/battery/batteries metal.obj"
+            ]
+          }
+        }
+        Shape {
+          appearance PBRAppearance {
+            IBLStrength 6
+          }
+          geometry Mesh {
+            url [
+              "obj/RMC-TRACER/battery/contacts.obj"
+            ]
+          }
+        }
+      ]
+    }
+    DEF motors Group {
+      children [
+        CadShape {
+          url [
+            "obj/RMC-TRACER/motors/motors.obj"
+          ]
+        }
+        Shape {
+          appearance PBRAppearance {
+            roughness 0.2
+            metalness 0.6
+            IBLStrength 2
+          }
+          geometry Mesh {
+            url [
+              "obj/RMC-TRACER/motors/cover.obj"
+            ]
+          }
+        }
+        Shape {
+          appearance PBRAppearance {
+            IBLStrength 6
+          }
+          geometry Mesh {
+            url [
+              "obj/RMC-TRACER/motors/axis.obj"
+            ]
+          }
+        }
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.596078 0.415686 0.266667
+            roughness 0.2
+            metalness 0.2
+            IBLStrength 6
+          }
+          geometry Mesh {
+            url [
+              "obj/RMC-TRACER/motors/brushes.obj"
+            ]
+          }
+        }
+      ]
+    }
+    DEF engine Group {
+      children [
+        HingeJoint {
+          jointParameters HingeJointParameters {
+            axis 0 1 0
+            anchor 0 -0.0314 0
+          }
+          device [
+            RotationalMotor {
+              name "R_motor::wheel"
+              maxVelocity 58.666520000000006
+              multiplier 0.133333
+              sound ""
+            }
+          ]
+          endPoint Solid {
+            translation 0 -0.0314 0
+            rotation 0 1 0 0
+            children [
+              Shape {
+                appearance PBRAppearance {
+                  baseColorMap ImageTexture {
+                    url [
+                      "obj/RMC-TRACER/textures/PLA/colors.jpg"
+                    ]
+                  }
+                  roughnessMap ImageTexture {
+                    url [
+                      "obj/RMC-TRACER/textures/PLA/colors-roughness.jpg"
+                    ]
+                  }
+                  metalness 0
+                }
+                geometry Mesh {
+                  url [
+                    "obj/RMC-TRACER/wheel/wheel.obj"
+                  ]
+                }
+              }
+            ]
+            name "R_wheel"
+            contactMaterial "rubber"
+            boundingObject Pose {
+              translation 0 -0.001 0
+              rotation 1 0 0 -1.5707953071795862
+              children [
+                Shape {
+                  geometry Cylinder {
+                    height 0.0035
+                    radius 0.01725
+                  }
+                }
+              ]
+            }
+            physics Physics {
+              density -1
+              mass 0.02
+            }
+          }
+        }
+        HingeJoint {
+          jointParameters HingeJointParameters {
+            axis 0 1 0
+            anchor 0 0.0314 0
+          }
+          device [
+            RotationalMotor {
+              name "L_motor::wheel"
+              maxVelocity 58.666520000000006
+              multiplier 0.133333
+              sound ""
+            }
+          ]
+          endPoint Solid {
+            translation 0 0.0314 0
+            rotation 0 1 0 0
+            children [
+              Pose {
+                rotation 0 0 1 3.14159
+                children [
+                  Shape {
+                    appearance PBRAppearance {
+                      baseColorMap ImageTexture {
+                        url [
+                          "obj/RMC-TRACER/textures/PLA/colors.jpg"
+                        ]
+                      }
+                      roughnessMap ImageTexture {
+                        url [
+                          "obj/RMC-TRACER/textures/PLA/colors-roughness.jpg"
+                        ]
+                      }
+                      metalness 0
+                    }
+                    geometry Mesh {
+                      url [
+                        "obj/RMC-TRACER/wheel/wheel.obj"
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+            name "L_wheel"
+            contactMaterial "rubber"
+            boundingObject Pose {
+              translation 0 0.001 0
+              rotation 1 0 0 -1.5707953071795862
+              children [
+                Shape {
+                  geometry Cylinder {
+                    height 0.0035
+                    radius 0.01725
+                  }
+                }
+              ]
+            }
+            physics Physics {
+              density -1
+              mass 0.02
+            }
+          }
+        }
+        HingeJoint {
+          jointParameters HingeJointParameters {
+            axis 0 1 0
+            anchor 0.016247 -0.028 -0.004805
+          }
+          device [
+            RotationalMotor {
+              name "R_motor::gear"
+              maxVelocity 440
+              multiplier -1
+            }
+          ]
+          endPoint Solid {
+            translation 0.016247 -0.028 -0.004805
+            rotation 0 1 0 0
+            children [
+              Shape {
+                appearance PBRAppearance {
+                  baseColor 0.596078 0.415686 0.266667
+                  metalness 0.2
+                  IBLStrength 6
+                }
+                geometry Mesh {
+                  url [
+                    "obj/RMC-TRACER/motors/gear.obj"
+                  ]
+                }
+              }
+            ]
+            name "R_gear"
+            boundingObject Pose {
+              rotation 1 0 0 -1.5707953071795862
+              children [
+                Shape {
+                  geometry Cylinder {
+                    height 0.005
+                    radius 0.00208
+                  }
+                }
+              ]
+            }
+            physics Physics {
+            }
+          }
+        }
+        HingeJoint {
+          jointParameters HingeJointParameters {
+            axis 0 1 0
+            anchor -0.016247 0.028 -0.004805
+          }
+          device [
+            RotationalMotor {
+              name "L_motor::gear"
+              maxVelocity 440
+              multiplier -1
+            }
+          ]
+          endPoint Solid {
+            translation -0.016247 0.028 -0.004805
+            rotation 0 1 0 0
+            children [
+              Shape {
+                appearance PBRAppearance {
+                  baseColor 0.596078 0.415686 0.266667
+                  metalness 0.2
+                  IBLStrength 6
+                }
+                geometry Mesh {
+                  url [
+                    "obj/RMC-TRACER/motors/gear.obj"
+                  ]
+                }
+              }
+            ]
+            name "L_gear"
+            boundingObject Pose {
+              rotation 1 0 0 -1.5707953071795862
+              children [
+                Shape {
+                  geometry Cylinder {
+                    height 0.005
+                    radius 0.00208
+                  }
+                }
+              ]
+            }
+            physics Physics {
+            }
+          }
+        }
+      ]
+    }
+    DEF UI Group {
+      children [
+        LED {
+          translation 0.00643 0.013433 0.0231
+          children [
+            SpotLight {
+              attenuation 0 0 1
+              beamWidth 1
+              color 0 0 1
+              cutOffAngle 1.57
+              direction 0 0 1
+              intensity 10
+              on FALSE
+              radius 0.006
+              castShadows TRUE
+            }
+          ]
+          color [
+            0 0 1
+          ]
+        }
+        Camera {
+          translation -0.05 0 0.05
+          fieldOfView 1
+          width 300
+          height 180
+        }
+        Display {
+          translation 0.0104 0 0.03544
+          children [
+            Shape {
+              appearance PBRAppearance {
+                baseColorMap ImageTexture {
+                }
+                metalness 0
+              }
+              geometry IndexedFaceSet {
+                coord Coordinate {
+                  point [
+                    0.01343 0.01343 0
+                    -0.01343 0.01343 0
+                    -0.01343 -0.01343 0
+                    0.01343 -0.01343 0
+                  ]
+                }
+                texCoord TextureCoordinate {
+                  point [
+                    0 1
+                    0 0
+                    1 0
+                    1 1
+                  ]
+                }
+                coordIndex [
+                  0, 1, 2, 3
+                ]
+                texCoordIndex [
+                  0, 1, 2, 3
+                ]
+              }
+            }
+          ]
+          width 180
+          height 180
+        }
+        Speaker {
+          name "buzzer"
+        }
+      ]
+    }
+    DEF sensors Group {
+      children [
+        DistanceSensor {
+          translation 0.035777 -0.03 -0.00525
+          rotation 0 1 0 1.5708
+          name "gs0"
+          lookupTable [
+            0 1023 0
+            0.004 800 0.01
+            0.02 7 0.01
+          ]
+          type "infra-red"
+        }
+        DistanceSensor {
+          translation 0.035777 -0.01 -0.00525
+          rotation 0 1 0 1.5708
+          name "gs1"
+          lookupTable [
+            0 1023 0
+            0.004 800 0.01
+            0.02 7 0.01
+          ]
+          type "infra-red"
+          numberOfRays 2
+          aperture 0.4
+        }
+        DistanceSensor {
+          translation 0.035777 0.01 -0.00525
+          rotation 0 1 0 1.5708
+          name "gs2"
+          lookupTable [
+            0 1023 0
+            0.004 800 0.01
+            0.02 7 0.01
+          ]
+          type "infra-red"
+          numberOfRays 2
+          aperture 0.4
+        }
+        DistanceSensor {
+          translation 0.035777 0.03 -0.00525
+          rotation 0 1 0 1.5708
+          name "gs3"
+          lookupTable [
+            0 1023 0
+            0.004 800 0.01
+            0.02 7 0.01
+          ]
+          type "infra-red"
+        }
+        DistanceSensor {
+          translation -0.009894 -0.022422 0
+          rotation 0 0 1 -1.5707953071795862
+          name "rs"
+          lookupTable [
+            0 1023 0
+            0.004 800 0.01
+            0.02 7 0.01
+          ]
+          type "infra-red"
+        }
+        DistanceSensor {
+          translation 0.009894 0.022422 0
+          rotation 0 0 1 1.5708
+          name "ls"
+          lookupTable [
+            0 1023 0
+            0.004 800 0.01
+            0.02 7 0.01
+          ]
+          type "infra-red"
+        }
+      ]
+    }
+  ]
+  name "RMC-TRACER"
+  boundingObject Group {
+    children [
+      Pose {
+        translation 0.008 0 0.0045
+        children [
+          Shape {
+            geometry Box {
+              size 0.07178 0.07178 0.034
+            }
+          }
+        ]
+      }
+      Pose {
+        translation 0.008 0 0.0283
+        children [
+          Shape {
+            geometry Box {
+              size 0.06858 0.05334 0.01384
+            }
+          }
+        ]
+      }
+    ]
+  }
+  physics Physics {
+    density -1
+    mass 0.15252
+  }
+  controller "RMC_Tracer_Ctrl"
+  supervisor TRUE
+}

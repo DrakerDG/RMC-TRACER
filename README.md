@@ -245,3 +245,35 @@ Any contribution should align with these principles.
 - **DrakeDG**
   https://x.com/draker_dg
   www.youtube.com/@DrakerDG
+
+---
+
+## Appendix
+
+### How to compile *.cpp drivers
+
+![Build cpp](docs/images/Webots/Build/build01.png)
+*Open file RMC_Tracer_Ctrl.cpp*
+
+![Build cpp](docs/images/Webots/Build/build02.png)
+*Start the build process (Build the current project)*
+
+![Build cpp](docs/images/Webots/Build/build03.png)
+*Confirmation of successful build!
+
+![Build cpp](docs/images/Webots/Build/build04.png)
+*Open file Follow_Cam001.cpp*
+
+![Build cpp](docs/images/Webots/Build/build05.png)
+*Start the build process (Build the current project)*
+
+![Build cpp](docs/images/Webots/Build/build06.png)
+*Confirmation of successful build!*
+
+---
+
+## Bonus
+
+### 3D model renders
+- **Renders**
+  https://github.com/DrakerDG/RMC-TRACER/tree/main/docs/images/Renders/Wallpaper

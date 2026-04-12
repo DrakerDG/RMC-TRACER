@@ -175,16 +175,16 @@ Please refer to **CONTRIBUTING.md** before submitting changes.
 
 ## 📸 Screenshots & Visualization
 
-![World Overview](docs/images/Webots/RMC-TRACER02.png)
+![World Overview](docs/images/Webots/RMC-TRACER_2.png)
 *Webots world overview showing the sports center environment, track layout, and RMC-TRACER Robot during simulation.*
 
-![Line Follower Robot - 3D View](docs/images/Webots/RMC-TRACER03.png)
+![Line Follower Robot - 3D View](docs/images/Webots/RMC-TRACER_3.png)
 *RMC_Tracer_Ctrl following the track using PID control.*
 
-![Real-Time UI Overlay](docs/images/Webots/RMC-TRACER04.png)
+![Real-Time UI Overlay](docs/images/Webots/RMC-TRACER_4.png)
 *Real-time 3D display showing timer, elapsed, state, robot speed and sensor states during execution.*
 
-![Simulation Environment Detail](docs/images/Webots/RMC-TRACER05.png)
+![Simulation Environment Detail](docs/images/Webots/RMC-TRACER_5.png)
 *Indoor sports center environment with furnished elements used to provide a realistic simulation context.*
 
 ---

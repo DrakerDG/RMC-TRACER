@@ -128,7 +128,7 @@ The controller is fully modular and split into multiple files:
 ├── Config.hpp          // Global configuration & constants
 ```
 
-![Structure](docs/imagesWebots/Controller_Map.png)
+![Structure](docs/images/Webots/Controller_Map.png)
 
 ---
 

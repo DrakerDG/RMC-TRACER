@@ -38,7 +38,7 @@ Each component has a specific responsibility, allowing clean interaction between
 ![World Overview](docs/images/Renders/Blender/Blender02.png)
 *3D design formed with separate objects with colors and textures.*
 
-![World Overview](docs/images//Renders/BlenderBlender03.png)
+![World Overview](docs/images/Renders/Blender/Blender03.png)
 *Complete 3D model.*
 
 ![World Overview](docs/images/Renders/Blender/Blender04.png)

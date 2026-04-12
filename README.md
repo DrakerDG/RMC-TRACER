@@ -142,7 +142,7 @@ The controller is fully modular and split into multiple files:
 5. Run the simulation
 6. Observe: calibration → pause → line follower run
 
--> [How to compile *.cpp controllers](#how-to-compile-cpp)
+-> [Go to...](#how-to-compile-cpp-controllers)
 
 ```
 git clone https://github.com/DrakerDG/RMC-TRACER

@@ -174,7 +174,7 @@ Please refer to **CONTRIBUTING.md** before submitting changes.
 
 ---
 
-## 📸 Screenshots & Visualization
+## Screenshots & Visualization
 
 ![World Overview](docs/images/Webots/RMC-TRACER_2.png)
 *Webots world overview showing the sports center environment, track layout, and RMC-TRACER Robot during simulation.*

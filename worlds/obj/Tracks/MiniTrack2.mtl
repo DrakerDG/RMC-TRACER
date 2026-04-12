@@ -1,0 +1,22 @@
+# Blender 5.1.0 MTL File: 'RMC-TRACER.blend'
+# www.blender.org
+
+newmtl grey.002
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.064689 0.064689 0.064689
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+
+newmtl track
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd /home/drakerdg/WebotsProjects/RMC-TRACER/worlds/obj/docs/Tracks/colors.jpg
+map_Ns /home/drakerdg/WebotsProjects/RMC-TRACER/worlds/obj/docs/Tracks/colors-roughness.jpg

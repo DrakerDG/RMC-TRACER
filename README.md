@@ -27,11 +27,6 @@ The controller includes sensor calibration and PID-based steering, designed to p
 
 This project is based on the real RMC-TRACER robot by @takumi_fc3s. I used the original 3D design of the robot's body model, including the chassis, battery holder, and cover. I modeled the hardware in Blender—the motors, PCBs, and their components—taking care to keep the model mesh as simple as possible while still capturing the details of the real robot.
 
-## Webots World Structure
-
-The simulation is built around a complete Webots world that combines **functional separation** and **visual realism**.
-Each component has a specific responsibility, allowing clean interaction between control logic, visualization, and timing.
-
 ![World Overview](docs/images/Renders/Blender/Blender01.png)
 *Optimized 3D design mesh.*
 
@@ -43,6 +38,11 @@ Each component has a specific responsibility, allowing clean interaction between
 
 ![World Overview](docs/images/Renders/Blender/Blender04.png)
 *3D model hardware (internal parts).*
+
+## Webots World Structure
+
+The simulation is built around a complete Webots world that combines **functional separation** and **visual realism**.
+Each component has a specific responsibility, allowing clean interaction between control logic, visualization, and timing.
 
 ### World Components
 
@@ -74,7 +74,7 @@ World
 ### Robots in the World
 
 - **RMC-TRACER Robot**
-  The line follower robot controlled by this project.
+  The line follower robot controlled.
   It performs:
   - Sensor calibration
   - Pause
@@ -98,6 +98,7 @@ The robot model does **not include a suction or downforce system**.
 ### For this reason, the controller applies:
 
 - Speed limits
+- PID limits
 
 The purpose of these limitations is to accurately reflect the behavior of the real robot.
 
@@ -119,13 +120,13 @@ The controller is fully modular and split into multiple files:
 
 ```
 ├── RMC_Tracer_Ctrl.cpp    // State machine and orchestration (Main)
-├── Sensors.*           // Sensor handling & normalization
-├── PID.*               // PID controller
-├── SpeedCtrl.*         // Motor and speed management
-├── UI.*                // 3D visualization (Supervisor labels)
-├── Sound.*             // Sound indicator
-├── State.*             // Robot states & stop reasons
-├── Config.hpp          // Global configuration & constants
+├── Sensors.*              // Sensor handling & normalization
+├── PID.*                  // PID controller
+├── SpeedCtrl.*            // Motor and speed management
+├── UI.*                   // 3D visualization (OLED screen)
+├── Sound.*                // Sound indicator
+├── State.*                // Robot states
+├── Config.hpp             // Global configuration & constants
 ```
 
 ![Structure](docs/images/Webots/Controller_Map.png)
@@ -194,7 +195,7 @@ Please refer to **CONTRIBUTING.md** before submitting changes.
 The primary goals of this repository are:
 - To explore control strategies in simulation
 - To study line-following performance under realistic physical constraints
-- To evaluate PID behavior, speed profiling, and track learning
+- To evaluate PID behavior and speed profiling
 - To provide a reference implementation for experimentation and learning
 
 This project exists as a supportive and complementary effort to the RMC-TRACER robot ecosystem, offering:
@@ -206,7 +207,7 @@ This project exists as a supportive and complementary effort to the RMC-TRACER r
 
 ## Relationship to RMC-TRACER robot owner
 
-- All credit for the robot concept belongs to the RMC-TRACER robot and its contributors
+- All credit for the robot concept belongs to the RMC-TRACER robot and its contributors (@takumi_fc3s)
 - This repository aims to add value through simulation, not ownership
 - Improvements developed here are intended to be shared openly
 
@@ -228,10 +229,13 @@ Any contribution should align with these principles.
 
 ---
 
-## 🔗 External Sources
+## External Sources
 
+- **Blender**
+  https://www.blender.org
+  
 - **Webots Simulator**
-  https://cyberbotics.com/
+  https://cyberbotics.com
 
 - **takumi**
   https://x.com/takumi_fc3s

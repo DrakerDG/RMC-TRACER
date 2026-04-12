@@ -1,0 +1,13 @@
+# Blender 5.1.0 MTL File: 'RMC-TRACER.blend'
+# www.blender.org
+
+newmtl brush.001
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd /home/drakerdg/WebotsProjects/RMC-TRACER/worlds/obj/docs/3D/Base/PCB/tape.jpg
+map_Ns /home/drakerdg/WebotsProjects/RMC-TRACER/worlds/obj/docs/3D/Base/PCB/tape_roughness.jpg
+map_Bump -bm 1.000000 /home/drakerdg/WebotsProjects/RMC-TRACER/worlds/obj/docs/3D/Base/PCB/tape_normal.jpg

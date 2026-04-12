@@ -277,3 +277,6 @@ Any contribution should align with these principles.
 ### 3D model renders
 - **Renders**
   https://github.com/DrakerDG/RMC-TRACER/tree/main/docs/images/Renders/Wallpaper
+
+![Renders](docs/images/Renders/Renders.png)
+*Preview*

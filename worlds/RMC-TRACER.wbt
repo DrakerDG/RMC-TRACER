@@ -4085,6 +4085,9 @@ DEF RMC-TRACER Robot {
             Shape {
               appearance PBRAppearance {
                 baseColorMap ImageTexture {
+                  url [
+                    "image/display01.png"
+                  ]
                 }
                 metalness 0
               }

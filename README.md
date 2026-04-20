@@ -10,7 +10,7 @@ This project implements an **line-following robot controller** written in **C++ 
 
 The controller includes sensor calibration and PID-based steering, designed to preserve stability while it followin the line.
 
-![World Overview](docs/images/Webots/RMC-TRACER_1.png)
+![World Overview](docs/images/Webots/RMC-TRACER-V2_1.png)
 
 ---
 
@@ -19,7 +19,7 @@ The controller includes sensor calibration and PID-based steering, designed to p
 ### Fully implemented features
 - Automatic sensor calibration
 - FSM-Finite state machine control
-- PID-Based line following
+- PID-Adaptative based line following (*New!*)
 
 ---
 
@@ -98,7 +98,7 @@ The robot model does **not include a suction or downforce system**.
 ### For this reason, the controller applies:
 
 - Speed limits
-- PID limits
+- PID adaptative limits
 
 The purpose of these limitations is to accurately reflect the behavior of the real robot.
 
@@ -120,16 +120,17 @@ The controller is fully modular and split into multiple files:
 
 ```
 ├── RMC_Tracer_Ctrl.cpp    // State machine and orchestration (Main)
+├── Config.hpp             // Global configuration & constants
+├── State.*                // Robot states
 ├── Sensors.*              // Sensor handling & normalization
 ├── PID.*                  // PID controller
 ├── SpeedCtrl.*            // Motor and speed management
-├── UI.*                   // 3D visualization (OLED screen)
 ├── Sound.*                // Sound indicator
-├── State.*                // Robot states
-├── Config.hpp             // Global configuration & constants
+├── UI.*                   // 3D visualization (OLED screen)
+├── Graph.*                // Graphics processing
 ```
 
-![Structure](docs/images/Webots/Controller_Map.png)
+![Structure](docs/images/Webots/Controller_Map_V2.png)
 
 ---
 
@@ -178,16 +179,16 @@ Please refer to **CONTRIBUTING.md** before submitting changes.
 
 ## Screenshots & Visualization
 
-![World Overview](docs/images/Webots/RMC-TRACER_2.png)
+![World Overview](docs/images/Webots/RMC-TRACER-V2_2.png)
 *Webots world overview showing the sports center environment, track layout, and RMC-TRACER Robot during simulation.*
 
-![Line Follower Robot - 3D View](docs/images/Webots/RMC-TRACER_3.png)
+![Line Follower Robot - 3D View](docs/images/Webots/RMC-TRACER-V2_3.png)
 *RMC_Tracer_Ctrl following the track using PID control.*
 
-![Real-Time UI Overlay](docs/images/Webots/RMC-TRACER_4.png)
+![Real-Time UI Overlay](docs/images/Webots/RMC-TRACER-V2_4.png)
 *Real-time 3D display showing timer, elapsed, state, robot speed and sensor states during execution.*
 
-![Simulation Environment Detail](docs/images/Webots/RMC-TRACER_5.png)
+![Simulation Environment Detail](docs/images/Webots/RMC-TRACER-V2_5.png)
 *Indoor sports center environment with furnished elements used to provide a realistic simulation context.*
 
 ---

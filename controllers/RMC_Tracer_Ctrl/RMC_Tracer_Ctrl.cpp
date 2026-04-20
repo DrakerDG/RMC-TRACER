@@ -46,8 +46,8 @@ int main(int argc, char **argv) {
   RobotState nextState = RobotState::STOP;       // Set next state to stop run
   RobotState state = RobotState::CALIBRATION;    // Set current state to calibration
 
-  //PID pid(0.06, 0.24, 0.000024);                   // Set PID on soft values (Speed 220 rad/s)
-  PID pid(0.09, 0.36, 0.000036);                   // Set PID on medium values (Speed 220 rad/s)
+  PID pid(0.06, 0.24, 0.000024);                   // Set PID on soft values (Speed 220 rad/s)
+  //PID pid(0.09, 0.36, 0.000036);                   // Set PID on medium values (Speed 220 rad/s)
   //PID pid(0.12, 0.48, 0.000048);                   // Set PID on hard values (Speed 220 rad/s)
   
   // Main loop:

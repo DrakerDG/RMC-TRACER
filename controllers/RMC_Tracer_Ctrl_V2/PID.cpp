@@ -33,9 +33,9 @@ double PID::compute(double error, double dt) {                      // Function 
   // Integral with dynamic anti-windup
   integral = integral * (2 / 3) + error * dt * (1.0 - alpha_filtered);
 
-  PID_value = Kp * error
-            + Ki * integral
-            + Kd * d_error;
+  PID_value = Kp * error      // P = Kp * error     <-- Proportional
+            + Ki * integral   // I = Ki * integral  <-- Integral
+            + Kd * d_error;   // D = Ki * d_error   <-- Derivative
 
   prev_error = error;
 

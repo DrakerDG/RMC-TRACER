@@ -14,7 +14,7 @@ public:
   PID();                                                  // Main module
   
   double compute(double error, double dt);                // Function for calculating PID with continuous adaptive gains
-  PIDState getState() const;
+  PIDState getState() const;                              // Function for get State of alpha, alpha_filtered, PID and keyes
   void reset();                                           // Function to reset the PID value
 
 private:
